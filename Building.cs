@@ -30,5 +30,15 @@ namespace Planner
         public void Purchase(string person) {
             _owner = person;
         }
+
+        public string GetBuildingInfo()
+        {
+            return $@"
+            {_address}
+            ---------------
+            Designed by {_designer}
+            Constructed on {_dateConstructed}
+            Owned by {_owner}";
+        }
     }
 }
