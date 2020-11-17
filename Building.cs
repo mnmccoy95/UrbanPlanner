@@ -19,8 +19,11 @@ namespace Planner
             }
         }
 
-        public Building(string address) {
+        public Building(string address, int stories, double width, double depth) {
             _address = address;
+            Stories = stories;
+            Width = width;
+            Depth = depth;
         }
 
         public void Construct() {
