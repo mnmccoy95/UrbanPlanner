@@ -13,11 +13,7 @@ namespace Planner
             building1.Construct();
             building1.Purchase("Mike Stoklasa");
             Console.WriteLine($@"
-            {building1.GetAddress()}
-            ---------------
-            Designed by {building1.GetDesigner()}
-            Constructed on {building1.GetDate()}
-            Owned by {building1.GetOwner()}
+            {building1.GetBuildingInfo()}
             {building1.Volume} cubic meters of space
             ");
         }

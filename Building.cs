@@ -31,24 +31,14 @@ namespace Planner
             _owner = person;
         }
 
-        public string GetDesigner()
+        public string GetBuildingInfo()
         {
-            return _designer;
-        }
-
-        public string GetAddress()
-        {
-            return _address;
-        }
-
-        public DateTime GetDate()
-        {
-            return _dateConstructed;
-        }
-
-        public string GetOwner()
-        {
-            return _owner;
+            return $@"
+            {_address}
+            ---------------
+            Designed by {_designer}
+            Constructed on {_dateConstructed}
+            Owned by {_owner}";
         }
     }
 }
