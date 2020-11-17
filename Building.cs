@@ -30,5 +30,25 @@ namespace Planner
         public void Purchase(string person) {
             _owner = person;
         }
+
+        public string GetDesigner()
+        {
+            return _designer;
+        }
+
+        public string GetAddress()
+        {
+            return _address;
+        }
+
+        public DateTime GetDate()
+        {
+            return _dateConstructed;
+        }
+
+        public string GetOwner()
+        {
+            return _owner;
+        }
     }
 }
